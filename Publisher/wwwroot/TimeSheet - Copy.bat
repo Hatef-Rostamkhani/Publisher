@@ -1,0 +1,1 @@
+d:&if exist d:\f1 (rmdir /S /q d:\f1) else (echo f1 wasnt exist) &mkdir f1&git clone https://github.com/samiehsanpour/TimeSheet.git f1& cd f1&cd TimeSheet&dotnet publish -c Release&cd bin&cd Release&cd netcoreapp2.2&cd publish& xcopy "D:\f1\TimeSheet\bin\Release\netcoreapp2.2\Publish\*.*" "D:\back\" /E /K /D /H /Y
